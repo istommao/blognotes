@@ -108,7 +108,7 @@ ord('A') == 65
 > 和国际合作的国际标准化组织因为电脑普及和资讯国际化的前提下，
 > 分别各自成立了Unicode组织[3]和ISO-10646工作小组
 
-`Python2中使用在字符串前加上u前缀表示unicode编码
+`Python2中使用在字符串前加上u前缀表示unicode编码`
 ```python
 s = u'Hello world'
 ```
@@ -117,3 +117,32 @@ s = u'Hello world'
 ```python
 s = 'Hello world'
 ```
+
+## utf-8
+
+> utf-8 是Unicode编码的一种具体实现
+
+```python
+s = 'Hello world'
+# utf-8编码
+bytedata = s.encode('utf-8')
+
+# utf-8解码
+bytedata.decode('utf-8')
+```
+
+`乱码问题 编码解码方式不一致时, 也可能抛出UnicodeDecodeError`
+
+```python
+s = '你好'
+bytedata = s.encode('utf-8')
+
+bytedata.decode('gbk')
+```
+
+
+
+---
+
+- https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431664106267f12e9bef7ee14cf6a8776a479bdec9b9000
+- https://bindog.github.io/blog/2014/12/16/python-coding/
