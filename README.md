@@ -1,6 +1,10 @@
 # blognotes
 blog notes
 
+## 计算机基础
+
+- 编码问题
+
 ## Python篇
 
 - Python基础数据类型
