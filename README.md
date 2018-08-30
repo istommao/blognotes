@@ -17,3 +17,7 @@ blog notes
 - TCP协议入门
 - http协议简介
 - https工作原理及其简易实现
+
+## 软件工程
+
+- Python编码规范

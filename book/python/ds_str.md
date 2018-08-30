@@ -28,11 +28,9 @@ word += ' world'
 
 ```
 
-- - - - - 
+- - - - -
 - http://ohmycat.me/python/2015/03/03/python-string-intern.html
 - http://guilload.com/python-string-interning/
 - https://www.androiddev.net/python8/
 - https://stackoverflow.com/questions/15541404/python-string-interning
 - Python学习笔记 雨痕
-
-
