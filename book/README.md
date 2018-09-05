@@ -14,6 +14,10 @@ blog notes
 - [√]CPython学习笔记 编译安装
 - [√]Python开发环境搭建
 
+## Django源码笔记
+
+- 讲一讲Django开发环境`manage.py runserver`
+
 ## 网络篇
 
 - []TCP协议入门
