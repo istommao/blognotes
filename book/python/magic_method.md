@@ -139,4 +139,6 @@ j > k
 
 ---
 
+- https://rszalski.github.io/magicmethods/
 - http://www.wklken.me/posts/2012/10/29/python-base-magic.html
+- https://pyzh.readthedocs.io/en/latest/python-magic-methods-guide.html
