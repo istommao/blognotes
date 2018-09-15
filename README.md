@@ -8,11 +8,15 @@ blog notes
 ## Python篇
 
 - []Python基础数据类型
-- []Python魔术方法
+- [-]Python魔术方法
 - []什么是闭包
-- []可迭代对象、迭代器、生成器？
+- [-]可迭代对象、迭代器、生成器？
 - [√]CPython学习笔记 编译安装
 - [√]Python开发环境搭建
+
+## Django源码笔记
+
+- 讲一讲Django开发环境`manage.py runserver`
 
 ## 网络篇
 
