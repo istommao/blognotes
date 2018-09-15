@@ -1,6 +1,6 @@
 # Python魔术方法
 
-## __call__
+## `__call__`
 
 > 可调用
 
@@ -20,7 +20,7 @@ callable(cat) == True
 cat()
 ```
 
-## __bool__
+## `__bool__`
 
 ```python
 class Coin(object):
@@ -38,12 +38,12 @@ bool(coin)
 
 ## 映射
 
-- __hash__
-- __setitem__
-- __getitem__
-- __delitem__
-- __len___
-- __contains__
+- `__hash__`
+- `__setitem__`
+- `__getitem__`
+- `__delitem__`
+- `__len__`
+- `__contains__`
 
 ```python
 class Zoo(object):
@@ -78,12 +78,12 @@ print('tom is a {}'.format(zoo['tom']))
 
 ## 比较方法
 
-- __lt__
-- __le__
-- __gt__
-- __ge__
-- __eq__
-- __ne__
+- `__lt__`
+- `__le__`
+- `__gt__`
+- `__ge__`
+- `__eq__`
+- `__ne__`
 
 ```python
 class Poker(object):
@@ -134,6 +134,34 @@ class Poker(object):
 j = Poker('J')
 k = Poker('K')
 j > k
+```
+
+
+## `__enter__` `__exit__`
+
+
+```python
+import traceback
+
+
+class Context(object):
+
+    def __init__(self, name):
+        self.name = name
+
+    def __enter__(self):
+        print('__enter__ exec')
+        return self
+
+    def __exit__(self, exc_type, exc_value, tb):
+        if exc_type is not None:
+            traceback.print_exception(exc_type, exc_value, tb)
+        else:
+            print('__exit__ without exception')
+
+
+with Context('hello') as context:
+    print(context.name)
 ```
 
 
