@@ -3,6 +3,15 @@
 `代码clone`
 
 ```shell
+yum install wget
+
+# yum太慢的话可以换国内yum源
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+cd /etc/yum.repos.d/
+wget http://mirrors.163.com/.help/CentOS7-Base-163.repo
+```
+
+```shell
 # 如果未安装git
 yum install git
 
@@ -39,12 +48,13 @@ yum install readline-devel
 yum install openssl openssl-devel
 
 # 解决 import bz2 报错
-yum install bzip2
+yum install bzip2 bzip2-devel
 
 # uuid
-yum install uuid-devel
+yum install libuuid-devel
 
 # 解决 import curses 报错
+# 安装 readline 会附带这个库
 yum install ncurses-devel
 
 # 解决 _dbm _gdbm 缺失提醒
@@ -55,6 +65,13 @@ yum install xz-devel
 
 # 解决 _tkinter 缺失提醒
 yum install tk-devel
+```
+
+```shell
+sudo apt-get install uuid-dev
+
+# 测试 uuid
+cat /proc/sys/kernel/random/uuid
 ```
 
 `编译安装`
