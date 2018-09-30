@@ -40,21 +40,54 @@ text = ''.join([chr(ord(i)  - 3) for i in cipher]).lower()
 
 ## 分组加密
 
-- 对称加密
-    - DES
-    - 3DES
-    - AES Rijndael算法
-        - ECB
-        - CBC
-        - CFB
-        - OFB
-        - CTR
+`XOR`
 
-- 公钥加密
+```python
+0 ^ 0   == 0
+0 ^ 1   == 1
+1 ^ 0   == 1
+1 ^ 1   == 0
+```
+
+`一次性密码本`
+
+> 理论上无法被破解的加密方式，但存在以下几种问题
+
+- 密钥配送问题
+- 密钥与明文长度要一致
+
+### 对称加密
+
+- DES
+- 3DES
+- AES Rijndael算法
+    - ECB
+    - CBC
+    - CFB
+    - OFB
+    - CTR
+
+`DES`
+
+> DES是一种将64位的明文加密成64位密文的加密算法，
+> 密钥长度64位，其中每隔7位设置一个用于错误检查的位，所以实际密钥长度56位
+
+DES的结构 Feistel网络 (基本结构由Horst Feistel设计)
+
+
+`3DES`
+
+
+`AES Rijndael算法`
+
+
+
+### 公钥加密
     - RSA
     - EIGamal
     - Rabin
     - 椭圆曲线
+
 
 ## Hash函数
 
