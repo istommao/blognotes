@@ -80,13 +80,19 @@ DES的结构 Feistel网络 (基本结构由Horst Feistel设计)
 
 `AES Rijndael算法`
 
+## 密钥配送问题
 
+- 通过事先共享密钥
+- 密钥分配中心
+- Diffie-Hellman 密钥交换
+- 公钥加密
 
 ### 公钥加密
-    - RSA
-    - EIGamal
-    - Rabin
-    - 椭圆曲线
+
+- RSA
+- EIGamal
+- Rabin
+- 椭圆曲线
 
 
 ## Hash函数
