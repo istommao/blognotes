@@ -1,9 +1,8 @@
-# 博客清单
-blog notes
+# Blog
 
 ## 计算机基础
 
-- [√]编码问题
+- [√]编码问题(/)
 
 ## 数据结构与算法篇
 
@@ -12,12 +11,13 @@ blog notes
 
 ## Python篇
 
-- []Python基础数据类型
-- [-]Python魔术方法
-- []什么是闭包
-- [-]可迭代对象、迭代器、生成器？
-- [√]CPython学习笔记 编译安装
-- [√]Python开发环境搭建
+- [Python基础数据类型](/)
+- [Python魔术方法](/)
+- [Python闭包和装饰器](/)
+- [可迭代对象、迭代器、生成器？](/python/python_dev)
+- [CPython学习笔记 编译安装](/python/python_dev)
+- [Python开发环境搭建](/python/python_dev)
+
 
 ## Django源码笔记
 
