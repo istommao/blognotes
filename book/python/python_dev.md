@@ -23,7 +23,7 @@ brew install pipenv
 
 `config .pre-commit-config.yaml`
 
-```shell
+```yaml
 # .pre-commit-config.yaml
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
@@ -56,7 +56,7 @@ repos:
         args: [--rcfile=.pylintrc, --load-plugins=pylint_django]
 ```
 
-```shell
+```yaml
 # .pre-commit-hooks.yaml
 -   id: validate_manifest
     name: Validate Pre-Commit Manifest
